@@ -29,3 +29,44 @@ pip install -r requirements.txt
     ├── baseline/              ← baseline generations
     ├── finetuned/             ← finetuned generations
     └── grids/                 ← baseline_grid.png / finetuned_grid.png
+
+```
+
+## 🚀 Full Pipeline Execution
+
+The entire training → inference → CLIP evaluation → figure generation workflow can be executed with:
+
+```bash
+python project.py
+```
+
+
+## 💡 Key Features
+
+- Cross-attention–only finetuning (very low memory footprint)
+- CIFAR-10 experiment setting; easily replaceable with custom prompts or domains
+- Automatic CLIPScore computation + visualization pipeline
+- Clear qualitative & quantitative comparison (baseline vs finetuned)
+- Fully reproducible end-to-end experiment design
+
+---
+
+
+## 🔥 Main Contributions
+
+- Stable and controllable finetuning by updating only cross-attention weights  
+- Practically runnable on a **single 16GB GPU**
+- Quantitative CLIP results + qualitative grid comparison provided
+- Training and visualization workflow fully automated
+
+---
+
+## 🧭 Future Work
+
+- Integrate LoRA/QLoRA for memory-efficient finetuning
+- Expand dataset beyond CIFAR-10 for visual realism & style richness
+- Add human preference scoring rather than CLIP-only evaluation
+- Explore controllable generation via adapters, ControlNet, or prompt engineering
+- Conduct A/B user studies to validate perceptual improvement
+
+---

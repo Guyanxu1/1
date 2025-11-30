@@ -17,3 +17,12 @@ We evaluate text-image alignment using CLIPScore, compare baseline vs. finetuned
 conda create -n sd-ga python=3.10 -y
 conda activate sd-ga
 pip install -r requirements.txt
+📦 stable-diffusion-cross-attn-finetune
+│── README.md
+│── requirements.txt
+│── project.py
+│
+└── results/
+    ├── baseline/              ← baseline generations
+    ├── finetuned/             ← finetuned generations
+    └── grids/                 ← baseline_grid.png / finetuned_grid.png

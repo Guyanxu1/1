@@ -52,13 +52,14 @@ python project.py
 ---
 
 
-## 🔥 Main Contributions
+## 🔥 My Main Contributions
 
-- Stable and controllable finetuning by updating only cross-attention weights  
-- Practically runnable on a **single 16GB GPU**
-- Quantitative CLIP results + qualitative grid comparison provided
-- Training and visualization workflow fully automated
-
+- Implemented a full Stable Diffusion training & generation pipeline, including automated image generation and visualization.
+- Designed a lightweight fine-tuning strategy that updates only cross-attention layers (≈400 steps), making the project runnable on a single 16GB GPU.
+- Built a CLIP-based evaluation framework and reported both quantitative scores and qualitative grid comparisons.
+- Constructed a CIFAR-10–based image–caption dataset and prompt templates for text-to-image training.
+- Attempted LoRA-based fine-tuning and documented why it failed under the course `diffusers` environment (for future work).
+- Wrote the full project report, including methodology, results, limitations, and future directions.
 ---
 
 ## 🧭 Future Work
